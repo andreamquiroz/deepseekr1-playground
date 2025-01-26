@@ -25,6 +25,11 @@ The larger they are --> need more GPU power. I followed the suggestion of starti
 3. As per Rohan's suggestion, I downloaded an AI chatbot application for a better (or more aesthetically pleasing) user experience. I used Rohan's own application: https://chatboxai.app
   1. I chose to use his because it is privacy focused, stores all your data locally—from conversation histories to personal settings. Everything stays on your device, giving you full control. DID I MENTION IT'S FREE? 
   2. In ChatBOX -> go to settings and switch the model provider to Ollama. You can ignore the built-in cloud AI options because we will be running the models locally.
-  3. I will say then when I set it up, the DeepSeek-r1 model that was available for me was deepseek-r1:70b
-  4. Set up the Ollama API host - the default setting is http://127.0.0.1:11434, which should work from the get-go. Pick the model and hit save. Now you're ready to chat with DeepSeek-R1 while running it locally!
+  3. I will say then when I set it up, the DeepSeek-r1 model that was available for me was deepseek-r1:70b. I wasn't sure if my laptop specs would handle that, so I went back on my terminal, ran `ollama run deepseek-r1:8b`, and then re-configured my settings on the chatbox app.
+  5. Set up the Ollama API host - the default setting is http://127.0.0.1:11434, which should work from the get-go. Here is how:
+     1. On MacOS run the following commands:
+        1. OLLAMA_HOST=0.0.0.0
+        2. OLLAMA_ORIGINS=*
+        3. I restarted the chatbox app after running these, checked my settings before continuining on. 
+  7. Pick the model and hit save. Now you're ready to chat with DeepSeek-R1 while running it locally!
 
